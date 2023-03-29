@@ -1,0 +1,61 @@
+http:
+  port: 3000
+apiEndpoints:
+  api-example-one:
+    paths: '/example-one/*'
+  api-example-two:
+    paths: '/example-two/*'
+    
+serviceEndpoints:
+  example-one:
+    url: 'http://localhost:3001/api/v1/'
+  example-two:
+    url: 'http://localhost:3002/api/v1/'
+
+policies:
+  - basic-auth
+  - cors
+  - expression
+  - key-auth
+  - log
+  - oauth2
+  - proxy
+  - rate-limit
+  - jwt
+  - morgan-logging
+  - custom-auth
+  - example
+  - body-parser
+  - proxy
+pipelines:
+  pipelines-example-one:
+    apiEndpoints:
+      - api-example-one
+    policies:
+      - cors:
+        - action:
+             origin: '*'
+             methods: 'HEAD,PUT,PATCH,POST,DELETE,GET'
+             allowedHeaders: ['Content-Type','Authorization']
+      - body-parser:
+      - morgan-logging:
+      - custom-auth:
+      - proxy:
+          - action:
+              serviceEndpoint: example-one
+              changeOrigin: true
+  pipelines-example-two:
+    apiEndpoints:
+      - api-example-two
+    policies:
+      - cors:
+        - action:
+             origin: '*'
+             methods: 'HEAD,PUT,PATCH,POST,DELETE,GET'
+             allowedHeaders: ['Content-Type','Authorization']
+      - body-parser:
+      - morgan-logging:
+      - proxy:
+          - action:
+              serviceEndpoint: example-two
+              changeOrigin: true

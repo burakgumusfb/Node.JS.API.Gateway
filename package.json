@@ -1,0 +1,23 @@
+{
+  "name": "node-js-api-gate-way",
+  "description": "Node Js Api Gateway",
+  "repository": {},
+  "license": "UNLICENSED",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "@elastic/ecs-winston-format": "^1.1.0",
+    "@elastic/elasticsearch": "^7.13.0",
+    "bluebird": "^3.7.2",
+    "dotenv": "^16.0.3",
+    "express-gateway": "^1.16.10",
+    "express-gateway-plugin-example": "^1.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "redis": "^3.1.2",
+    "util": "^0.12.4",
+    "winston": "^3.3.3",
+    "winston-elasticsearch": "^0.15.8"
+  }
+}
