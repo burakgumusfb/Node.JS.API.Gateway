@@ -1,6 +1,6 @@
 const winston = require('winston');
 const ecsFormat = require('@elastic/ecs-winston-format');
-const {esRequestTransports} = require('../clients/transports/elastichsearch-transports');
+const {esRequestTransports} = require('../../clients/transports/elastichsearch-transports');
 
 const logger = winston.createLogger({
     format: ecsFormat(),

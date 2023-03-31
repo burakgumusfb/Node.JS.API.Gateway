@@ -1,6 +1,6 @@
 const morgan = require('morgan');
 const os = require('os');
-const jwt = require('../../lib/jwt');
+const jwt = require('../../../lib/jwt');
 const logger = require('../../logger/logger')
 
 const ignoreList = [

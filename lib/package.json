@@ -1,0 +1,10 @@
+{
+    "name": "lib",
+    "description": "lib",
+    "authors": "author",
+    "version": "1.0.0",
+    "main": "pathToMain",
+    "dependencies": {
+        "jsonwebtoken": "^8.5.1"
+    }
+}

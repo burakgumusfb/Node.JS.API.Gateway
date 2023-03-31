@@ -1,0 +1,17 @@
+{
+    "name": "main-project",
+    "description": "main project",
+    "authors": "author",
+    "version": "1.0.0",
+    "main": "app.js",
+    "scripts": {
+        "start:gateway": "cd api-gateway && node app.js",
+        "start:service1": "cd example-one-service && node app.js",
+        "start:service2": "cd example-two-service && node app.js",
+        "start:token": "cd token-service && node app.js",
+        "start": "concurrently \"npm run start:gateway\" \"npm run start:service1\" \"npm run start:service2\" \"npm run start:token\""
+      },
+    "devDependencies": {
+        "concurrently": "^8.0.1"
+    }
+}
