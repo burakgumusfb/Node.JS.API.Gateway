@@ -8,9 +8,9 @@ apiEndpoints:
     
 serviceEndpoints:
   example-one:
-    url: 'http://localhost:3001/api/v1/'
+    url: 'http://localhost:3001/'
   example-two:
-    url: 'http://localhost:3002/api/v1/'
+    url: 'http://localhost:3002/'
 
 policies:
   - basic-auth
