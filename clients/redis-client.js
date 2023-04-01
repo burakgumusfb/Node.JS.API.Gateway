@@ -1,3 +1,4 @@
+require('dotenv').config({ path: '../.env' });
 const { Promise } = require('bluebird');
 const redis = Promise.promisifyAll(require('redis'));
 

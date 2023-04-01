@@ -10,7 +10,7 @@
         "start:service2": "cd example-two-service && node app.js",
         "start:token": "cd token-service && node app.js",
         "start": "concurrently \"npm run start:gateway\" \"npm run start:service1\" \"npm run start:service2\" \"npm run start:token\""
-      },
+    },
     "devDependencies": {
         "concurrently": "^8.0.1"
     }

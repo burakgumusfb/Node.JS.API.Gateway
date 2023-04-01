@@ -1,4 +1,4 @@
-require('dotenv').config('.env');
+require('dotenv').config({ path: '../.env' });
 const path = require('path');
 const gateway = require('express-gateway');
 const express = require('express');

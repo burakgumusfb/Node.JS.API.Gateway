@@ -5,6 +5,7 @@
     "version": "1.0.0",
     "main": "pathToMain",
     "dependencies": {
+        "dotenv": "^16.0.3",
         "express": "^4.18.2",
         "nanoid": "^3.2.0"
     }

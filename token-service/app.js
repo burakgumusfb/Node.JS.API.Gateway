@@ -1,5 +1,7 @@
+require('dotenv').config({ path: '../.env' });
 const express = require('express');
 const { nanoid, customAlphabet } = require('nanoid');
+const jwt = require('../lib/jwt');
 const app = express();
 
 app.post('/token-service/create-token', function(req, res) {
@@ -11,7 +13,7 @@ app.post('/token-service/create-token', function(req, res) {
       };
 
       const token = jwt.sign(tokenParams);
-      return token;
+      res.send(token);
 });
 
 app.listen(3003, function() {

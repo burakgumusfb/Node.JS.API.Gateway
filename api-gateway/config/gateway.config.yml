@@ -5,12 +5,16 @@ apiEndpoints:
     paths: '/example-one/*'
   api-example-two:
     paths: '/example-two/*'
+  api-token:
+    paths: '/token-service/*'
     
 serviceEndpoints:
   example-one:
     url: 'http://localhost:3001/'
   example-two:
     url: 'http://localhost:3002/'
+  token:
+    url: 'http://localhost:3003/'
 
 policies:
   - basic-auth
@@ -58,4 +62,19 @@ pipelines:
       - proxy:
           - action:
               serviceEndpoint: example-two
+              changeOrigin: true
+  pipelines-token:
+    apiEndpoints:
+      - api-token
+    policies:
+      - cors:
+        - action:
+             origin: '*'
+             methods: 'HEAD,PUT,PATCH,POST,DELETE,GET'
+             allowedHeaders: ['Content-Type','Authorization']
+      - body-parser:
+      - morgan-logging:
+      - proxy:
+          - action:
+              serviceEndpoint: token
               changeOrigin: true

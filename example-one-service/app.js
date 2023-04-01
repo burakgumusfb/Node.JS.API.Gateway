@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/example-one/hello', function(req, res) {
-  res.send('Hello World From Example One!');
+  res.send('Hello World With JWT From Example One!');
 });
 
 app.listen(3001, function() {

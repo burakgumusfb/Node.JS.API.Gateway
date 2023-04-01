@@ -1,3 +1,5 @@
+const jwt = require('../../../lib/jwt');
+
 module.exports = {
   name: 'custom-auth',
   policy: (actionParams) => {

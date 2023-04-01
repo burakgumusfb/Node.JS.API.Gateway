@@ -1,3 +1,4 @@
+require('dotenv').config({ path: '../.env' });
 const { Client } = require('@elastic/elasticsearch');
 
 const client = new Client({
