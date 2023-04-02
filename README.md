@@ -1,3 +1,4 @@
+```bash
 .
 |-- example-one-service
 |   |-- package-lock.json
@@ -56,3 +57,4 @@
 |   |-- package.json
 |   |-- app.js
 |-- app.js
+```
