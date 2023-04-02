@@ -64,3 +64,22 @@ With this repository, we can use the Express Gateway infrastructure to log reque
 |   |-- app.js
 |-- app.js
 ```
+
+
+There are 6 projects in this repository:
+
+1. api gateway
+2. example-one-service
+3. example-two-service
+4. token-service
+5. clients
+6. lib
+
+You need to run "npm install" command in all of these sub-projects.
+
+```bash
+
+npm install
+
+```
+
