@@ -79,7 +79,7 @@ You need to run "npm install" command root project and  in all of these sub-proj
 
 ```bash
 
-root:
+root
     npm install
 cd api-gateway 
     npm install
@@ -96,6 +96,6 @@ cd lib
 cd token-service
     npm install
     cd ..
-root : npm start
+root npm start
 ```
 
