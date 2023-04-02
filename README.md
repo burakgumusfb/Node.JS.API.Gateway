@@ -66,6 +66,20 @@ With this repository, we can use the Express Gateway infrastructure to log reque
 ```
 
 
+And the content of the .env file is as follows, which you can modify with your own information:
+
+```bash
+ELASTICSEARCH_HOST = "http://localhost:9200"
+ELASTICSEARCH_USER = "elastic"
+ELASTICSEARCH_PASSWORD = "changeme"
+REDIS_HOST = "127.0.0.1"
+REDIS_PORT = 6378
+NODE_ENV = "dev"
+NODE_PORT = 3000
+JWT_SECRET = "9a9a7b4f89b2762c4f4af4c515802c12a4d4a7b3f9ba9f7d68a831821e86dbf8a22e0a7b530d71f16d0331d2d2a7bfe0f3c9dcecc48dd6850320db0c8bfe187"
+USE_REDIS_FOR_AUTH = false
+```
+
 There are 6 projects in this repository:
 
 1. api gateway
