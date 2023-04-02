@@ -83,14 +83,19 @@ root:
     npm install
 cd api-gateway 
     npm install
+    cd ..
 cd example-one-service
     npm install
+    cd ..
 cd example-two-service
     npm install
+    cd ..
 cd lib
     npm install
+    cd ..
 cd token-service
     npm install
-  
+    cd ..
+root : npm start
 ```
 
