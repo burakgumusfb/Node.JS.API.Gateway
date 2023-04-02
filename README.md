@@ -57,15 +57,32 @@ You need to obtain an access token for 'example-one-service' because it is prote
 request:
 
 ```bash
-      curl --location --request POST 'localhost:3000/token-service/create-token'
+ curl --location --request POST 'localhost:3000/token-service/create-token'
 ```
 response:
+
 ```bash
 {
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2WnF2X29DWkpueG9scGExNGdxZlcxYzZLT2dvb0RnUHhPaW9SUGl0b2hjUlJzM2EyQy1DampCTEUiLCJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsInNlc3Npb25JZCI6IkxvTnNkT0tUd2xTN1BfVjhkakNGNURtX1M2Uldmb056TmIyYjY2UkFmM25wbzBKb2E5Y1JxQzdGUDl4VE41aTd1dHBtRUJhRkV1dTJ3Y3FhLWtwdTc4Q005cVFBb1VNaW1BM1lhRTNuSkJpRkFwQ3RSWHM1bXItZU90a1dSOFhweloyVGNNVjUzUF9SYTlCSzJjSkdINTlvWTVraVRpemVORjdCcXo3NkpZTFdEaXJhRjBzdzkyZDhMc1RMa3V5UTh3WmFSYTJaZ2x3aUZhNVZBYU5RREdjd1NVU3FUN0lESUpPcVNQSWNOMHVCYVRlc2s0c0hBTXFHRjh2WFlvMmEiLCJpYXQiOjE2ODA0NDE1MjUsImV4cCI6MjYyNjUyMTUyNX0.QsUQoO291H6CcU--sR3vbejlt-7JZwvC3O3J_gM7ZaY",
     "token_type": "bearer"
 }
 ```
+Now, we can make requests to example-one-service as follows.
+
+request:
+
+```bash
+ curl --location 'localhost:3000/example-one/hello' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2WnF2X29DWkpueG9scGExNGdxZlcxYzZLT2dvb0RnUHhPaW9SUGl0b2hjUlJzM2EyQy1DampCTEUiLCJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsInNlc3Npb25JZCI6IkxvTnNkT0tUd2xTN1BfVjhkakNGNURtX1M2Uldmb056TmIyYjY2UkFmM25wbzBKb2E5Y1JxQzdGUDl4VE41aTd1dHBtRUJhRkV1dTJ3Y3FhLWtwdTc4Q005cVFBb1VNaW1BM1lhRTNuSkJpRkFwQ3RSWHM1bXItZU90a1dSOFhweloyVGNNVjUzUF9SYTlCSzJjSkdINTlvWTVraVRpemVORjdCcXo3NkpZTFdEaXJhRjBzdzkyZDhMc1RMa3V5UTh3WmFSYTJaZ2x3aUZhNVZBYU5RREdjd1NVU3FUN0lESUpPcVNQSWNOMHVCYVRlc2s0c0hBTXFHRjh2WFlvMmEiLCJpYXQiOjE2ODA0NDE1MjUsImV4cCI6MjYyNjUyMTUyNX0.QsUQoO291H6CcU--sR3vbejlt-7JZwvC3O3J_gM7ZaY'
+```
+response:
+```bash
+  Hello World With JWT From Example One!
+```
+
+
+
+
 
 ```bash
 .
