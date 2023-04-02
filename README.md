@@ -1,3 +1,9 @@
+Hello,
+
+With this repository, we can use the Express Gateway infrastructure to log requests and responses on Elastic Search through an API gateway. We can perform user authentication either through Redis or directly with JWT tokens and access microservices in this way.
+
+
+
 ```bash
 .
 |-- example-one-service
