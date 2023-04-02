@@ -77,16 +77,16 @@ request:
 ```
 response:
 ```bash
-   Hello, world! This is Example One, and you need to provide a JWT to access me.
+Hello, world! This is Example One, and you need to provide a JWT to access me.
 ```
 
 request:
 ```bash
-    curl --location 'localhost:3000/example-two/hello'
+curl --location 'localhost:3000/example-two/hello'
 ```
 response:
 ```bash
-   Hello World you can access to me without JWT Token or any Auth
+Hello World you can access to me without JWT Token or any Auth
 ```
 
 ```bash
