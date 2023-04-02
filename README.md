@@ -89,6 +89,11 @@ response:
 Hello World you can access to me without JWT Token or any Auth
 ```
 
+Below is an example log of requests and responses passing through the API Gateway.
+
+<img width="1465" alt="image" src="https://user-images.githubusercontent.com/10558654/229358113-47c2cee6-3298-43e8-acf5-e0785bec9010.png">
+
+
 ```bash
 .
 |-- example-one-service
