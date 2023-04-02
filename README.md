@@ -79,7 +79,18 @@ You need to run "npm install" command in all of these sub-projects.
 
 ```bash
 
-npm install
-
+root:
+    npm install
+cd api-gateway 
+    npm install
+cd example-one-service
+    npm install
+cd example-two-service
+    npm install
+cd lib
+    npm install
+cd token-service
+    npm install
+  
 ```
 
