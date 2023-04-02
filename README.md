@@ -75,7 +75,7 @@ There are 6 projects in this repository:
 5. clients
 6. lib
 
-You need to run "npm install" command in all of these sub-projects.
+You need to run "npm install" command root project and  in all of these sub-projects.
 
 ```bash
 
