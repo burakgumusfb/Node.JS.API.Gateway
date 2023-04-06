@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/example-two/hello', function(req, res) {
-  res.send('Hello World From Example Two!');
+  res.send('Hello World you can access to me without JWT Token or any Auth');
 });
 
 app.listen(3002, function() {
